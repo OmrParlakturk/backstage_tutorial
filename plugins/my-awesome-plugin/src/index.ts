@@ -1,1 +1,1 @@
-export { myAwesomePluginPlugin, MyAwesomePluginPage } from './plugin';
+export { myAwesomePluginPlugin, MyAwesomePluginPage, EntityMyAwesomePluginCard } from './plugin';

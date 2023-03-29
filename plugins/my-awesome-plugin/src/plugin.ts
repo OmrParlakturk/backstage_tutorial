@@ -1,4 +1,4 @@
-import { createPlugin, createRoutableExtension } from '@backstage/core-plugin-api';
+import { createPlugin, createRoutableExtension, createComponentExtension } from '@backstage/core-plugin-api';
 
 import { rootRouteRef } from './routes';
 
@@ -15,5 +15,17 @@ export const MyAwesomePluginPage = myAwesomePluginPlugin.provide(
     component: () =>
       import('./components/ExampleComponent').then(m => m.ExampleComponent),
     mountPoint: rootRouteRef,
+  }),
+);
+
+export const EntityMyAwesomePluginCard = myAwesomePluginPlugin.provide(
+  createComponentExtension({
+    name: 'EntityMyAwesomePluginCard',
+    component: {
+      lazy: () =>
+      import('./components/EntityOverviewCard').then(
+        m => m.EntityOverviewCard,
+      ),
+    },
   }),
 );

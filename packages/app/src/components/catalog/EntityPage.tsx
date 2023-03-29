@@ -56,6 +56,10 @@ import {
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 
+//import { EntityMyAwesomePluginCard } from '../../../../../plugins/my-awesome-plugin/src';
+import { EntityMyAwesomePluginCard } from '@internal/plugin-my-awesome-plugin';  
+
+
 const techdocsContent = (
   <EntityTechdocsContent>
     <TechDocsAddons>
@@ -124,9 +128,16 @@ const overviewContent = (
     <Grid item md={4} xs={12}>
       <EntityLinksCard />
     </Grid>
+
+    <Grid item md={4} xs={12}>
+      <EntityMyAwesomePluginCard/>
+    </Grid>
+
     <Grid item md={8} xs={12}>
       <EntityHasSubcomponentsCard variant="gridItem" />
     </Grid>
+    
+  
   </Grid>
 );
 
