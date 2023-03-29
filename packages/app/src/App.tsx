@@ -33,6 +33,7 @@ import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
 import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
+import { MyAwesomePluginPage } from '@internal/plugin-my-awesome-plugin';
 
 const app = createApp({
   apis,
@@ -91,6 +92,7 @@ const routes = (
     </Route>
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
+    <Route path="/my-awesome-plugin" element={<MyAwesomePluginPage />} />
   </FlatRoutes>
 );
 
