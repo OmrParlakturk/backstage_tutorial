@@ -2,20 +2,15 @@ import React from 'react';
 import { Typography, Grid } from '@material-ui/core';
 import {
   InfoCard,
-  Header,
-  Page,
   Content,
-  ContentHeader,
-  HeaderLabel,
-  SupportButton,
 } from '@backstage/core-components';
-import { ExampleFetchComponent } from '../ExampleFetchComponent';
 
-import { useEntity } from '@backstage/plugin-catalog-react'
+
+// import { useEntity } from '@backstage/plugin-catalog-react'
 
 export const EntityOverviewCard = () => {
 
-    const { entity } = useEntity();
+    // const { entity } = useEntity();
     
     return (
         <Content>
@@ -25,7 +20,7 @@ export const EntityOverviewCard = () => {
                 <Typography variant="body1">
                   Hello from my awesome plugin
                   <br/>
-                  you are on EntityPage of {entity.metdata}
+                  you are on EntityPage of {/* you are on EntityPage of {entity.metdata} */}
                 </Typography>
               </InfoCard>
             </Grid>
