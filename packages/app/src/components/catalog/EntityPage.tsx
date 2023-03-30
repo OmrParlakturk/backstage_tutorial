@@ -57,7 +57,9 @@ import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 
 //import { EntityMyAwesomePluginCard } from '../../../../../plugins/my-awesome-plugin/src';
-import { EntityMyAwesomePluginCard } from '@internal/plugin-my-awesome-plugin';  
+import { 
+  EntityMyAwesomePluginCard, 
+ } from '@internal/plugin-my-awesome-plugin';  
 
 
 const techdocsContent = (

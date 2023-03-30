@@ -1,1 +1,6 @@
-export { myAwesomePluginPlugin, MyAwesomePluginPage, EntityMyAwesomePluginCard } from './plugin';
+export { 
+    myAwesomePluginPlugin,
+    MyAwesomePluginPage, 
+    EntityMyAwesomePluginCard,
+    EntityMyAwesomePluginContent,
+} from './plugin';

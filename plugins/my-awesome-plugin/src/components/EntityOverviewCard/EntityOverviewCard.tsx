@@ -11,8 +11,12 @@ import {
 } from '@backstage/core-components';
 import { ExampleFetchComponent } from '../ExampleFetchComponent';
 
+import { useEntity } from '@backstage/plugin-catalog-react'
+
 export const EntityOverviewCard = () => {
 
+    const { entity } = useEntity();
+    
     return (
         <Content>
           <Grid container spacing={3} direction="column">
@@ -20,7 +24,8 @@ export const EntityOverviewCard = () => {
               <InfoCard title="My awesome plugin card">
                 <Typography variant="body1">
                   Hello from my awesome plugin
-                  {/*use entity hook*/}
+                  <br/>
+                  you are on EntityPage of {entity.metdata}
                 </Typography>
               </InfoCard>
             </Grid>

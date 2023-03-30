@@ -29,3 +29,14 @@ export const EntityMyAwesomePluginCard = myAwesomePluginPlugin.provide(
     },
   }),
 );
+
+export const EntityMyAwesomePluginContent = myAwesomePluginPlugin.provide(
+  createRoutableExtension({
+    name: 'EntityMyAwesomePluginContent',
+    component: () => import('./components/EntityOverviewCard').then(m => m.EntityOverviewCard),
+    mountPoint: {
+      $$routeRefType: 'absolute',
+      params: [],
+    },
+  }),
+)
